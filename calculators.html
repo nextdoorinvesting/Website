@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate Calculators | Next Door Investing</title>
+<meta name="description" content="Free mortgage, rental cash flow, house hacking, affordability, and fix-and-hold ROI calculators for Central Oregon buyers and investors.">
+<link rel="canonical" href="https://nextdoorinvesting.com/">
+<meta property="og:title" content="Real Estate Calculators | Next Door Investing">
+<meta property="og:description" content="Free mortgage, rental cash flow, house hacking, affordability, and fix-and-hold ROI calculators for Central Oregon buyers and investors.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nextdoorinvesting.com/assets/logo-full.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body data-page="calculators" data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7 14l4-4 3 3 5-6"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14 5l5 5M3 21l8.5-8.5M11.5 12.5l-1.8-1.8a2 2 0 0 1 0-2.8l2.1-2.1a2 2 0 0 1 2.8 0l1.8 1.8a2 2 0 0 1 0 2.8l-2.1 2.1a2 2 0 0 1-2.8 0Z"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="M11 11l9 9M17 17l2-2M14.5 19.5l2-2"/></symbol>
+<symbol id="i-hands" viewBox="0 0 24 24"><path d="M3 12l4-4 5 2 4-3 5 4"/><path d="M9.5 13.5l2.5 2.5a1.6 1.6 0 0 0 2.3 0l4.7-4.7"/><path d="M3 12v5M21 11v6"/></symbol>
+<symbol id="i-duplex" viewBox="0 0 24 24"><path d="M3 21V10l4.5-4L12 10v11M12 21V10l4.5-4L21 10v11M3 21h18"/><path d="M6.2 14h2M15.2 14h2"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2ZM9 4v14M15 6v14"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 4v14M6 13l6 6 6-6"/></symbol>
+</defs>
+</svg>
+<main id="main">
+
+  <section style="padding-bottom:1.5rem">
+    <div class="wrap center">
+      <span class="eyebrow">Free Tools</span>
+      <h1 style="font-size:clamp(1.7rem,3.4vw,2.5rem)">Real Estate Calculators</h1>
+      <p style="margin:1rem auto 0;color:var(--muted)">Think like an investor. Run the numbers before you decide.</p>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="calc-grid">
+
+        <!-- 1. Mortgage -->
+        <div class="calc">
+          <h3>Mortgage Payment Estimator</h3>
+          <p class="sub">Estimate your monthly principal & interest.</p>
+          <div class="in-row">
+            <div><label for="m_price">Home Price ($)</label><input id="m_price" type="number" value="650000"></div>
+            <div><label for="m_down">Down Payment (%)</label><input id="m_down" type="number" value="20"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="m_rate">Interest Rate (%)</label><input id="m_rate" type="number" step="0.01" value="6.5"></div>
+            <div><label for="m_term">Loan Term (Years)</label><input id="m_term" type="number" value="30"></div>
+          </div>
+          <div class="calc-out">
+            <div class="lbl">Estimated Monthly Payment (P&I)</div>
+            <div class="big" id="m_pmt">—</div>
+            <div class="rows">
+              <div><span>Loan Amount</span><b id="m_loan">—</b></div>
+              <div><span>Total Interest Paid</span><b id="m_int">—</b></div>
+              <div><span>Total Loan Cost</span><b id="m_total">—</b></div>
+            </div>
+          </div>
+          <p class="note">This is an estimate. Contact Christian for a full financial analysis.</p>
+          <a class="talk" href="contact.html">Want help running a real deal? Let's Talk →</a>
+        </div>
+
+        <!-- 2. Rental Cash Flow -->
+        <div class="calc">
+          <h3>Rental Cash Flow Analyzer</h3>
+          <p class="sub">Does the property pay you — or do you pay it?</p>
+          <div class="in-row">
+            <div><label for="r_price">Purchase Price ($)</label><input id="r_price" type="number" value="550000"></div>
+            <div><label for="r_down">Down Payment (%)</label><input id="r_down" type="number" value="25"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="r_rate">Interest Rate (%)</label><input id="r_rate" type="number" step="0.01" value="6.75"></div>
+            <div><label for="r_rent">Monthly Rent ($)</label><input id="r_rent" type="number" value="2800"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="r_tax">Property Taxes ($/mo)</label><input id="r_tax" type="number" value="380"></div>
+            <div><label for="r_ins">Insurance ($/mo)</label><input id="r_ins" type="number" value="120"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="r_maint">Maintenance (%)</label><input id="r_maint" type="number" value="5"></div>
+            <div><label for="r_vac">Vacancy (%)</label><input id="r_vac" type="number" value="5"></div>
+          </div>
+          <div><label for="r_pm">Property Management (%)</label><input id="r_pm" type="number" value="8"></div>
+          <div class="calc-out">
+            <div class="lbl">Monthly Cash Flow</div>
+            <div class="big" id="r_cf">—</div>
+            <div class="rows">
+              <div><span>Annual Cash Flow</span><b id="r_acf">—</b></div>
+              <div><span>Cash-on-Cash Return</span><b id="r_coc">—</b></div>
+              <div><span>Gross Rent Multiplier</span><b id="r_grm">—</b></div>
+            </div>
+          </div>
+          <p class="note" id="r_interp">Positive cash flow = the property pays you. Negative = you're subsidizing it.</p>
+          <a class="talk" href="contact.html">Want help running a real deal? Let's Talk →</a>
+        </div>
+
+        <!-- 3. House Hacking -->
+        <div class="calc">
+          <h3>House Hacking Estimator</h3>
+          <p class="sub">How much can rental income offset your housing cost?</p>
+          <div class="in-row">
+            <div><label for="h_piti">Your Monthly PITI ($)</label><input id="h_piti" type="number" value="3400"></div>
+            <div><label for="h_rent">Rental Income ($/mo)</label><input id="h_rent" type="number" value="1600"></div>
+          </div>
+          <div><label for="h_mktrent">What You'd Pay Renting ($/mo)</label><input id="h_mktrent" type="number" value="2200"></div>
+          <div class="calc-out">
+            <div class="lbl">Effective Monthly Housing Cost</div>
+            <div class="big" id="h_eff">—</div>
+            <div class="rows">
+              <div><span>Annual Savings vs. Renting</span><b id="h_save">—</b></div>
+              <div><span>Percent of PITI Covered</span><b id="h_pct">—</b></div>
+            </div>
+          </div>
+          <p class="note">House hacking: live in one unit (or room), rent the rest, let tenants pay down your mortgage.</p>
+          <a class="talk" href="contact.html">Want help running a real deal? Let's Talk →</a>
+        </div>
+
+        <!-- 4. Affordability -->
+        <div class="calc">
+          <h3>Home Affordability Calculator</h3>
+          <p class="sub">A realistic ceiling — and a conservative target.</p>
+          <div class="in-row">
+            <div><label for="a_inc">Gross Annual Income ($)</label><input id="a_inc" type="number" value="140000"></div>
+            <div><label for="a_debt">Monthly Debt Payments ($)</label><input id="a_debt" type="number" value="600"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="a_dp">Down Payment Available ($)</label><input id="a_dp" type="number" value="80000"></div>
+            <div><label for="a_rate">Interest Rate (%)</label><input id="a_rate" type="number" step="0.01" value="6.5"></div>
+          </div>
+          <div><label for="a_term">Loan Term (Years)</label><input id="a_term" type="number" value="30"></div>
+          <div class="calc-out">
+            <div class="lbl">Estimated Max Home Price</div>
+            <div class="big" id="a_max">—</div>
+            <div class="rows">
+              <div><span>Conservative Target (28% DTI)</span><b id="a_cons">—</b></div>
+              <div><span>Monthly Payment at Max</span><b id="a_pmt">—</b></div>
+            </div>
+          </div>
+          <p class="note">Lenders may approve more — that doesn't mean you should borrow it.</p>
+          <a class="talk" href="contact.html">Want help running a real deal? Let's Talk →</a>
+        </div>
+
+        <!-- 5. Fix and Hold -->
+        <div class="calc" style="grid-column:1/-1">
+          <h3>Fix-and-Hold ROI Estimator</h3>
+          <p class="sub">Buy it, improve it, rent it — what does the deal actually return?</p>
+          <div class="in-row">
+            <div><label for="f_price">Purchase Price ($)</label><input id="f_price" type="number" value="480000"></div>
+            <div><label for="f_reno">Renovation Budget ($)</label><input id="f_reno" type="number" value="60000"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="f_arv">After Repair Value — ARV ($)</label><input id="f_arv" type="number" value="640000"></div>
+            <div><label for="f_down">Down Payment (%)</label><input id="f_down" type="number" value="25"></div>
+          </div>
+          <div class="in-row">
+            <div><label for="f_rent">Monthly Rent, Post-Reno ($)</label><input id="f_rent" type="number" value="3100"></div>
+            <div><label for="f_exp">Est. Monthly Expenses incl. Mortgage ($)</label><input id="f_exp" type="number" value="2600"></div>
+          </div>
+          <div class="calc-out">
+            <div class="lbl">Equity Created</div>
+            <div class="big" id="f_eq">—</div>
+            <div class="rows">
+              <div><span>Total Cash Invested (Down + Reno)</span><b id="f_inv">—</b></div>
+              <div><span>Monthly Cash Flow</span><b id="f_cf">—</b></div>
+              <div><span>Cash-on-Cash Return</span><b id="f_coc">—</b></div>
+            </div>
+          </div>
+          <p class="note">Sweat equity is real wealth-building — when the numbers are honest. I can help you pressure-test the ARV and the renovation budget.</p>
+          <a class="talk" href="contact.html">Want help running a real deal? Let's Talk →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="assets/site.js"></script>
+<script src="assets/calculators.js"></script>
+</body>
+</html>
