@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Next Door Investing — Central Oregon Real Estate Insights</title>
+<meta name="description" content="Practical, evergreen guidance for Central Oregon buyers, sellers, and investors — written from real-world ownership experience by Christian Lisignoli.">
+<link rel="canonical" href="https://nextdoorinvesting.com/blog/">
+<meta property="og:title" content="Blog | Next Door Investing">
+<meta property="og:description" content="Practical, evergreen guidance for Central Oregon buyers, sellers, and investors — written from real-world ownership experience.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nextdoorinvesting.com/assets/logo-full.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="blog" data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7 14l4-4 3 3 5-6"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14 5l5 5M3 21l8.5-8.5M11.5 12.5l-1.8-1.8a2 2 0 0 1 0-2.8l2.1-2.1a2 2 0 0 1 2.8 0l1.8 1.8a2 2 0 0 1 0 2.8l-2.1 2.1a2 2 0 0 1-2.8 0Z"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="M11 11l9 9M17 17l2-2M14.5 19.5l2-2"/></symbol>
+<symbol id="i-hands" viewBox="0 0 24 24"><path d="M3 12l4-4 5 2 4-3 5 4"/><path d="M9.5 13.5l2.5 2.5a1.6 1.6 0 0 0 2.3 0l4.7-4.7"/><path d="M3 12v5M21 11v6"/></symbol>
+<symbol id="i-duplex" viewBox="0 0 24 24"><path d="M3 21V10l4.5-4L12 10v11M12 21V10l4.5-4L21 10v11M3 21h18"/><path d="M6.2 14h2M15.2 14h2"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2ZM9 4v14M15 6v14"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 4v14M6 13l6 6 6-6"/></symbol>
+</defs>
+</svg>
+
+<main id="main">
+  <section style="padding-bottom:1rem">
+    <div class="wrap">
+      <span class="eyebrow">The Blog</span>
+      <h1 style="font-size:clamp(1.7rem,3.4vw,2.5rem)">Market Insights & Investing Education</h1>
+      <p style="margin-top:.8rem;color:var(--muted)">Practical, evergreen guidance for Central Oregon buyers, sellers, and investors — written from real-world ownership experience.</p>
+      <div class="filter-bar" id="blogFilters" role="group" aria-label="Filter posts by category">
+        <button class="on" data-cat="All">All</button>
+        <button data-cat="Investing">Investing</button>
+        <button data-cat="Buying">Buying</button>
+        <button data-cat="Selling">Selling</button>
+        <button data-cat="Renovation">Renovation</button>
+        <button data-cat="Market Updates">Market Updates</button>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:1rem">
+    <div class="wrap">
+      <div class="cards" id="blogGrid" style="margin-top:0"></div>
+      <div class="newsletter">
+        <div>
+          <h3 style="font-size:1rem">Get Market Insights in Your Inbox</h3>
+          <p style="font-size:.92rem;color:var(--muted);margin-top:.4rem">One useful email a month. Market data, investing tips, and renovation lessons. No spam, no pressure.</p>
+        </div>
+        <form onsubmit="event.preventDefault();this.innerHTML='<b style=\'color:var(--forest)\'>Subscribed — talk soon.</b>'">
+          <input type="text" placeholder="First name" aria-label="First name" required>
+          <input type="email" placeholder="Email address" aria-label="Email address" required>
+          <button class="btn btn-gold" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/posts-data.js"></script>
+<script>
+function postCard(p){
+ return `<div class="card" data-cat="${p.cat}">
+   <div class="card-img"></div>
+   <div class="card-body">
+     <span class="tag">${p.cat}</span>
+     <h3>${p.title}</h3>
+     <p>${p.excerpt}</p>
+     <p style="font-size:.78rem;color:var(--muted)">Christian Lisignoli · ${p.date} · ${p.readMins} min read</p>
+     <a class="more" href="posts/${p.slug}.html">Read More →</a>
+   </div></div>`;
+}
+// Most recent first (registry order is fine, but keep this explicit and easy to change)
+document.getElementById('blogGrid').innerHTML = POSTS.map(postCard).join('');
+
+document.getElementById('blogFilters').addEventListener('click', e=>{
+ if(e.target.tagName!=='BUTTON') return;
+ document.querySelectorAll('#blogFilters button').forEach(b=>b.classList.remove('on'));
+ e.target.classList.add('on');
+ const cat = e.target.dataset.cat;
+ document.querySelectorAll('#blogGrid .card').forEach(c=>{
+   c.style.display = (cat==='All'||c.dataset.cat===cat)?'flex':'none';
+ });
+});
+</script>
+</body>
+</html>
