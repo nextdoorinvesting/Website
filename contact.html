@@ -44,15 +44,17 @@
     <div class="wrap contact-grid">
       <div class="cform">
         <div id="formArea">
-          <label for="c_name">Name</label><input id="c_name" type="text" required>
-          <label for="c_email">Email</label><input id="c_email" type="email" required>
-          <label for="c_phone">Phone (Optional)</label><input id="c_phone" type="tel">
-          <label for="c_subj">Subject</label>
-          <select id="c_subj"><option>Buying</option><option>Selling</option><option>Investing</option><option>General Question</option></select>
-          <label for="c_msg">Message</label><textarea id="c_msg" rows="5"></textarea>
-          <p style="margin-top:1.4rem"><button class="btn btn-gold" onclick="sendForm()">Send Message</button></p>
-          <p style="font-size:.85rem;color:var(--muted);margin-top:.9rem">I typically respond within one business day.</p>
-        </div>
+  <form id="contactForm">
+    <label for="c_name">Name</label><input id="c_name" name="name" type="text" required>
+    <label for="c_email">Email</label><input id="c_email" name="email" type="email" required>
+    <label for="c_phone">Phone (Optional)</label><input id="c_phone" name="phone" type="tel">
+    <label for="c_subj">Subject</label>
+    <select id="c_subj" name="subject"><option>Buying</option><option>Selling</option><option>Investing</option><option>General Question</option></select>
+    <label for="c_msg">Message</label><textarea id="c_msg" name="message" rows="5"></textarea>
+    <p style="margin-top:1.4rem"><button class="btn btn-gold" type="button" onclick="sendForm()">Send Message</button></p>
+    <p style="font-size:.85rem;color:var(--muted);margin-top:.9rem">I typically respond within one business day.</p>
+  </form>
+</div>
       </div>
       <div class="cinfo">
         <div class="block"><h3>Phone</h3><p>(541) 771-8880</p></div>
