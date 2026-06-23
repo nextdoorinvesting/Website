@@ -23,7 +23,7 @@ async function sendForm(){
    if(response.ok){
      document.getElementById('formArea').innerHTML =
        '<h3 style="font-size:1rem;margin-bottom:.6rem">Message sent.</h3>' +
-       '<p style="font-size:.95rem">Thanks, ' + name.split(' ')[0] + ' — I\'ll get back to you within one business day.</p>' +
+       '<p style="font-size:.95rem">Thanks, ' + name.split(' ')[0] + ' I\'ll get back to you within one business day.</p>' +
        '<p style="font-size:.85rem;color:var(--muted);margin-top:.8rem">— Christian</p>';
    } else {
      throw new Error('Form submission failed');
