@@ -24,7 +24,6 @@
           <li><a href="${ROOT}blog/index.html" data-key="blog">Blog</a></li>
           <li><a href="${ROOT}calculators.html" data-key="calculators">Calculators</a></li>
           <li><a href="${ROOT}faq.html" data-key="faq">FAQ</a></li>
-          <li><a href="${ROOT}reviews.html" data-key="reviews">Reviews</a></li>
           <li><a href="${ROOT}contact.html" data-key="contact">Contact</a></li>
           <li><a class="btn btn-gold nav-cta" href="${ROOT}contact.html" data-key="contact">Contact Christian</a></li>
         </ul>
@@ -48,7 +47,6 @@
           <li><a href="${ROOT}blog/index.html">Blog</a></li>
           <li><a href="${ROOT}calculators.html">Calculators</a></li>
           <li><a href="${ROOT}faq.html">FAQ</a></li>
-          <li><a href="${ROOT}reviews.html">Reviews</a></li>
           <li><a href="${ROOT}contact.html">Contact</a></li>
         </ul>
       </div>
