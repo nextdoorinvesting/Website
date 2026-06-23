@@ -55,8 +55,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:5410000000">(541) XXX-XXXX</a></li>
-          <li><a href="mailto:">[your @rogdiscovery.com email]</a></li>
+          <li><a href="tel:5417718880">(541) 771-8880</a></li>
+          <li><a href="mailto:">NextDoorInvesting@gmail.com</a></li>
           <li><a href="https://www.instagram.com/nextdoorinvesting/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/NextDoorInvesting/" target="_blank" rel="noopener">Facebook</a></li>
           <li style="margin-top:.8rem;font-size:.85rem">Serving Bend, Redmond,<br>Terrebonne & La Pine</li>
         </ul>
