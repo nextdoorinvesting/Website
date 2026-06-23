@@ -119,21 +119,23 @@
     </div>
   </section>
 
-  <section>
+ <section>
     <div class="wrap">
       <div class="center">
         <span class="eyebrow">Free Resource</span>
         <h2>A Vetted Contractor Contact List</h2>
         <p style="margin:1rem auto 0;color:var(--muted)">The same painters, roofers, electricians, and handymen I use on my own renovations, compiled into one free guide so you're not starting from a Google search.</p>
       </div>
-      <div class="pillars" style="margin-top:2.5rem;grid-template-columns:1fr;max-width:640px;margin-left:auto;margin-right:auto">
-        <div class="pillar" style="display:flex;align-items:center;gap:1.6rem;text-align:left;padding:2rem 2.2rem">
-          <div class="arch-frame" style="flex-shrink:0;margin:0"><svg class="icon" aria-hidden="true"><use href="#i-hammer"/></svg></div>
-          <div>
-            <h3 style="margin-bottom:.4rem">Get the Contractor Contact Booklet</h3>
-            <p style="font-size:.92rem;color:var(--muted);margin-bottom:1.2rem">Trusted local pros across roofing, electrical, plumbing, painting, and general handyman work, vetted through my own renovation projects.</p>
-            <a class="btn btn-gold" href="contact.html">Request the Free Guide</a>
-          </div>
+      <div style="max-width:480px;margin:2.2rem auto 0;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:2rem 2.2rem">
+        <div id="boomlet-formArea">
+          <form id="boomletForm">
+            <label for="bk_name" style="display:block;font-family:'Work Sans',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.4rem">Name</label>
+            <input id="bk_name" name="name" type="text" required style="width:100%;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:4px;font-family:'Lato',sans-serif;font-size:.95rem;background:var(--bg);margin-bottom:1rem">
+            <label for="bk_email" style="display:block;font-family:'Work Sans',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.4rem">Email</label>
+            <input id="bk_email" name="email" type="email" required style="width:100%;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:4px;font-family:'Lato',sans-serif;font-size:.95rem;background:var(--bg);margin-bottom:1.4rem">
+            <button class="btn btn-gold" type="button" onclick="sendBooklet()" style="width:100%">Get the Free Guide</button>
+            <p style="font-size:.78rem;color:var(--muted);margin-top:.8rem;text-align:center">You'll be taken straight to the PDF after submitting.</p>
+          </form>
         </div>
       </div>
     </div>
