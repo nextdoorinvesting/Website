@@ -29,6 +29,14 @@ const POSTS = [
     date: "June 2026",
     readMins: 6
   },
+   {
+    slug: "moving-to-bend-oregon-guide",
+    cat: "Market Updates",
+    title: "Moving to Bend, Oregon: What the Vibe, Politics, Pace, Trade Jobs, and Cost of Living Are Really Like",
+    excerpt: "An honest, local look at life in Bend — the vibe, politics, pace, trade job market, and real cost of living numbers for groceries, rent, and buying a home.",
+    date: "June 2026",
+    readMins: 9
+  },
   { cat:"Investing", title:"How to Analyze a Rental Property in Central Oregon", excerpt:"The exact framework I use on my own deals: cash flow, cash-on-cash return, and the local assumptions that make or break the math.", date:"May 2026", readMins:7, slug:"analyze-rental-property-central-oregon" },
   { cat:"Investing", title:"Duplex vs. Single Family: Which Investment Makes More Sense?", excerpt:"Better cash flow or better appreciation? A practical comparison for Bend and Redmond investors.", date:"May 2026", readMins:5, slug:"duplex-vs-single-family" },
   { cat:"Investing", title:"Understanding Cap Rate, Cash-on-Cash, and ROI (Plain English)", excerpt:"Three numbers investors throw around constantly — explained without the jargon, with Central Oregon examples.", date:"April 2026", readMins:6, slug:"cap-rate-cash-on-cash-roi-explained" },
