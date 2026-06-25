@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://selloregonhouses.com/</loc>
+    <loc>https://www.selloregonhouses.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/about.html</loc>
+    <loc>https://www.selloregonhouses.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/calculators.html</loc>
+    <loc>https://www.selloregonhouses.com/calculators.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/blog/index.html</loc>
+    <loc>https://www.selloregonhouses.com/blog/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/blog/posts/house-hacking-101.html</loc>
+    <loc>https://www.selloregonhouses.com/blog/posts/house-hacking-101.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/blog/posts/moving-to-bend-oregon-guide.html</loc>
+    <loc>https://www.selloregonhouses.com/blog/posts/moving-to-bend-oregon-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/faq.html</loc>
+    <loc>https://www.selloregonhouses.com/faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://selloregonhouses.com/contact.html</loc>
+    <loc>https://www.selloregonhouses.com/contact.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
