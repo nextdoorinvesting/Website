@@ -70,6 +70,41 @@ function calcF(){
  set('f_coc',inv>0?pct(acf/inv*100):'—');
  document.getElementById('f_eq').style.color=eq>=0?'var(--gold-dark)':'#A4452F';
 }
+
+/* 6. Cash to Close */
+function calcC2C(){
+ const price=$('c2c_price');
+ const downPct=$('c2c_down');
+ const down=price*downPct/100;
+ const loan=price-down;
+ const rate=$('c2c_rate'),term=$('c2c_term');
+
+ const origFee=loan*$('c2c_orig')/100;
+ const title=$('c2c_title');
+ const appr=$('c2c_appr');
+ const rec=$('c2c_rec');
+ const closingCosts=origFee+title+appr+rec;
+
+ const taxEscrow=($('c2c_tax')/12)*$('c2c_taxmo');
+ const insUpfront=$('c2c_ins'); // typically a full year paid at closing
+ const dailyInterest=(loan*(rate/100))/365;
+ const prepaidInterest=dailyInterest*$('c2c_days');
+ const prepaids=taxEscrow+insUpfront+prepaidInterest;
+
+ const credit=$('c2c_credit');
+
+ const total=down+closingCosts+prepaids-credit;
+ const monthlyPmt=pmt(loan,rate,term);
+
+ set('c2c_total',usd(Math.max(total,0)));
+ set('c2c_dp',usd(down));
+ set('c2c_cc',usd(closingCosts));
+ set('c2c_pp',usd(prepaids));
+ set('c2c_creditout', credit>0 ? '–'+usd(credit) : usd(0));
+ set('c2c_loan',usd(loan));
+ set('c2c_pmt',usd(monthlyPmt));
+}
+
 const calcs={m:calcM,r:calcR,h:calcH,a:calcA,f:calcF};
 document.querySelectorAll('.calc input').forEach(inp=>{
  inp.addEventListener('input',()=>calcs[inp.id[0]]());
