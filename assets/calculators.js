@@ -105,8 +105,9 @@ function calcC2C(){
  set('c2c_pmt',usd(monthlyPmt));
 }
 
-const calcs={m:calcM,r:calcR,h:calcH,a:calcA,f:calcF};
+const calcs={m:calcM,r:calcR,h:calcH,a:calcA,f:calcF,c2c:calcC2C};
 document.querySelectorAll('.calc input').forEach(inp=>{
- inp.addEventListener('input',()=>calcs[inp.id[0]]());
+ const prefix = inp.id.startsWith('c2c_') ? 'c2c' : inp.id[0];
+ inp.addEventListener('input',()=>calcs[prefix]());
 });
-calcM();calcR();calcH();calcA();calcF();
+calcM();calcR();calcH();calcA();calcF();calcC2C();
