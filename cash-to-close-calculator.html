@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<title>How Much Cash Do You Need to Buy a Home? | Central Oregon Closing Cost Calculator</title>
+<meta name="description" content="Free closing cost & cash-to-close calculator for Bend, Redmond, and Central Oregon home buyers. Estimate your down payment, closing costs, and prepaids with local Deschutes County tax rates.">
+<link rel="canonical" href="https://selloregonhouses.com/cash-to-close-calculator.html">
+<meta property="og:title" content="How Much Cash Do You Need to Buy a Home in Central Oregon?">
+<meta property="og:description" content="Free closing cost & cash-to-close calculator built for Bend, Redmond, and Central Oregon buyers — with local property tax rates included.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://selloregonhouses.com/assets/logo-full.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much cash do I need to buy a house in Central Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most buyers need their down payment plus 2% to 5% of the purchase price for closing costs and prepaids. On a $550,000 home with 20% down, that's typically $121,000 to $135,000 total cash needed at closing, depending on the loan, lender, and title company."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are average closing costs in Deschutes County, Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Closing costs in Deschutes County typically run 2% to 4% of the purchase price, covering lender fees, title insurance, escrow, appraisal, and recording fees. Property tax rates in the area average around 0.60% to 0.76% depending on the city and ZIP code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the property tax rate in Bend, Oregon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bend's median effective property tax rate is approximately 0.60%, though it varies by ZIP code from about 0.56% to 0.61%. Redmond runs slightly higher at around 0.76%. Deschutes County's overall median is approximately 0.62%."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="calculators" data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7 14l4-4 3 3 5-6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 4v14M6 13l6 6 6-6"/></symbol>
+</defs>
+</svg>
+
+<main id="main">
+
+<section style="padding-bottom:1rem">
+  <div class="wrap">
+    <span class="eyebrow">Free Tool · Central Oregon</span>
+    <h1 style="font-size:clamp(1.7rem,3.6vw,2.6rem)">How Much Cash Do You Need to Buy a Home?</h1>
+    <p style="margin-top:.9rem;color:var(--muted);max-width:62ch">A real, honest estimate of your down payment, closing costs, and prepaids — built specifically for Bend, Redmond, and the rest of Deschutes County, using actual local property tax rates instead of national averages.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div style="max-width:640px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:2.2rem 2.2rem 1.8rem">
+
+      <div class="in-row">
+        <div><label for="s_price">Home Purchase Price ($)</label><input id="s_price" type="number" value="550000"></div>
+        <div><label for="s_down">Down Payment (%)</label><input id="s_down" type="number" step="0.5" value="20"></div>
+      </div>
+      <div style="margin-top:.3rem">
+        <label for="s_area" style="display:block;font-family:'Work Sans',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;margin:.85rem 0 .3rem">Where in Central Oregon?</label>
+        <select id="s_area" style="width:100%;padding:.7rem .85rem;border:1.5px solid var(--line);border-radius:4px;font-family:'Lato',sans-serif;font-size:1rem;background:var(--bg)">
+          <option value="0.60">Bend (avg. 0.60% property tax rate)</option>
+          <option value="0.76">Redmond (avg. 0.76% property tax rate)</option>
+          <option value="0.62">Other Deschutes County (avg. 0.62% property tax rate)</option>
+        </select>
+      </div>
+
+      <div class="calc-out" style="margin-top:1.6rem">
+        <div class="lbl">Estimated Cash Needed at Closing</div>
+        <div class="big" id="s_range" style="font-size:1.5rem">—</div>
+        <div class="rows">
+          <div><span>Down Payment</span><b id="s_down_out">—</b></div>
+          <div><span>Estimated Closing Costs & Prepaids</span><b id="s_costs_out">—</b></div>
+        </div>
+      </div>
+      <p class="note">This range reflects typical Central Oregon closing costs of 2%–4% of the purchase price, plus your down payment. Every deal is different — see the full breakdown below for an itemized, editable estimate.</p>
+
+      <div style="text-align:center;margin-top:1.4rem">
+        <button class="btn btn-outline" id="revealBtn" type="button" onclick="toggleDetail()">See the Full Breakdown ↓</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="detailSection" style="display:none;padding-top:0">
+  <div class="wrap">
+    <div class="calc" style="max-width:900px;margin:0 auto;border-top:5px solid var(--gold)">
+      <h3>Full Itemized Breakdown</h3>
+      <p class="sub">Adjust any assumption below to match your actual deal.</p>
+
+      <div class="in-row">
+        <div><label for="c2c_price">Purchase Price ($)</label><input id="c2c_price" type="number" value="550000"></div>
+        <div><label for="c2c_down">Down Payment (%)</label><input id="c2c_down" type="number" step="0.5" value="20"></div>
+      </div>
+      <div class="in-row">
+        <div><label for="c2c_rate">Interest Rate (%)</label><input id="c2c_rate" type="number" step="0.01" value="6.5"></div>
+        <div><label for="c2c_term">Loan Term (Years)</label><input id="c2c_term" type="number" value="30"></div>
+      </div>
+
+      <p style="font-family:'Work Sans',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-top:1.6rem;margin-bottom:.2rem">Closing Costs — Lender & Title</p>
+      <div class="in-row">
+        <div><label for="c2c_orig">Loan Origination (% of loan)</label><input id="c2c_orig" type="number" step="0.1" value="1.0"></div>
+        <div><label for="c2c_title">Title Insurance + Escrow Fee ($)</label><input id="c2c_title" type="number" value="2200"></div>
+      </div>
+      <div class="in-row">
+        <div><label for="c2c_appr">Appraisal + Credit Report ($)</label><input id="c2c_appr" type="number" value="650"></div>
+        <div><label for="c2c_rec">Recording + Misc. Fees ($)</label><input id="c2c_rec" type="number" value="250"></div>
+      </div>
+
+      <p style="font-family:'Work Sans',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-top:1.6rem;margin-bottom:.2rem">Prepaids & Escrow</p>
+      <div class="in-row">
+        <div><label for="c2c_tax">Annual Property Tax ($)</label><input id="c2c_tax" type="number" value="3300"></div>
+        <div><label for="c2c_taxmo">Tax Months Collected Upfront</label><input id="c2c_taxmo" type="number" value="3"></div>
+      </div>
+      <div class="in-row">
+        <div><label for="c2c_ins">Annual Homeowners Insurance ($)</label><input id="c2c_ins" type="number" value="1800"></div>
+        <div><label for="c2c_days">Days of Prepaid Interest</label><input id="c2c_days" type="number" value="15"></div>
+      </div>
+
+      <p style="font-family:'Work Sans',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-top:1.6rem;margin-bottom:.2rem">Credits</p>
+      <div><label for="c2c_credit">Seller Credit / Concession ($)</label><input id="c2c_credit" type="number" value="0"></div>
+
+      <div class="calc-out">
+        <div class="lbl">Estimated Cash Needed at Closing</div>
+        <div class="big" id="c2c_total">—</div>
+        <div class="rows">
+          <div><span>Down Payment</span><b id="c2c_dp">—</b></div>
+          <div><span>Closing Costs (Lender + Title)</span><b id="c2c_cc">—</b></div>
+          <div><span>Prepaids & Escrow</span><b id="c2c_pp">—</b></div>
+          <div><span>Seller Credit Applied</span><b id="c2c_creditout">—</b></div>
+          <div><span>Loan Amount</span><b id="c2c_loan">—</b></div>
+          <div><span>Estimated Monthly Payment (P&I)</span><b id="c2c_pmt">—</b></div>
+        </div>
+      </div>
+      <p class="note">This is an estimate built from national and local Central Oregon averages, using editable assumptions — actual costs vary by lender, title company, and loan type. Your Loan Estimate from a licensed lender is the accurate source once you're under contract.</p>
+      <a class="talk" href="contact.html">Want help running your real numbers? Let's Talk →</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:760px">
+
+    <h2>What Counts as "Cash to Close"?</h2>
+    <p>When people ask how much money they need to buy a house, they're usually thinking about the down payment — but that's only part of it. The full amount you'll need at the closing table is your down payment <em>plus</em> closing costs and prepaid expenses, minus any seller credits you've negotiated.</p>
+    <p>Nationally, closing costs and prepaids typically add up to 2% to 5% of the purchase price, on top of your down payment. In Central Oregon, most buyers land in the 2% to 4% range — though it depends heavily on your loan type, lender, and the specific title company you use.</p>
+
+    <h2>What's Actually Included in Closing Costs</h2>
+    <p><strong>Lender fees</strong> — origination fees (typically 0.5%–1% of your loan), underwriting, processing, and the appraisal and credit report fees your lender requires.</p>
+    <p><strong>Title and settlement fees</strong> — title insurance protects you and your lender against ownership disputes; escrow fees pay the title company for handling funds and paperwork. These vary 20–40% between title companies, so it's worth getting more than one quote.</p>
+    <p><strong>Prepaids</strong> — your first chunk of property taxes and homeowners insurance, collected upfront and held in escrow, plus prepaid daily interest from your closing date to the end of that month.</p>
+    <p><strong>Recording and government fees</strong> — what the county charges to officially record your new ownership and mortgage. These aren't negotiable, but they're usually a small piece of the total.</p>
+
+    <div class="article-callout">
+      <p><strong>Local note:</strong> Property tax rates vary meaningfully across Deschutes County. Bend runs roughly 0.56%–0.61% depending on ZIP code, Redmond averages closer to 0.76%, and the county-wide median sits around 0.62%. Since property tax escrow is one of the bigger prepaid costs, where you buy changes your cash-to-close number more than people expect.</p>
+    </div>
+
+    <h2>Central Oregon Property Tax Rates by Area</h2>
+    <ul>
+      <li><strong>Bend (97701):</strong> ~0.61% effective rate</li>
+      <li><strong>Bend (97703):</strong> ~0.56% effective rate</li>
+      <li><strong>Redmond:</strong> ~0.76% effective rate — the highest in the county</li>
+      <li><strong>Sunriver:</strong> ~0.49% effective rate — among the lowest</li>
+      <li><strong>Deschutes County median:</strong> ~0.62% effective rate</li>
+    </ul>
+    <p>These differences come down to school district levies and local assessment districts layered on top of the base county rate — not just home value. Two similar homes a few miles apart can carry noticeably different tax bills.</p>
+
+    <h2>Ways to Reduce Your Cash to Close</h2>
+    <p><strong>Negotiate seller concessions.</strong> In a buyer's market, sellers will often agree to cover some of your closing costs — up to 3% on conventional loans, more on FHA or VA. This is one of the biggest levers available and costs you nothing to ask for.</p>
+    <p><strong>Shop your title company.</strong> Title insurance rates aren't fixed — get quotes from more than one company. Ask about a simultaneous-issue discount if you're buying both lender's and owner's title policies.</p>
+    <p><strong>Compare lenders.</strong> Origination fees and rates vary meaningfully between lenders. A Loan Estimate from three different lenders, compared side by side, often reveals a few thousand dollars of difference.</p>
+    <p><strong>Consider the timing of your closing date.</strong> Prepaid interest is calculated from your closing date to the end of that month — closing later in the month means less prepaid interest due at the table.</p>
+    <p><strong>Ask about a lender credit.</strong> Accepting a slightly higher interest rate (often 0.125%–0.25%) in exchange for the lender covering part of your closing costs can make sense if you're tight on cash now and plan to refinance or sell within a few years.</p>
+
+    <h2>A Few Things This Calculator Can't Know</h2>
+    <p>This tool gives you a real, usable estimate — but a few things genuinely vary deal to deal and can only be nailed down once you're under contract: your exact title company's fee schedule, your specific lender's underwriting fees, your actual property's assessed tax value, and your homeowners insurance quote based on the specific property. Treat this as a strong planning number, not a guarantee.</p>
+
+    <div class="cta-inline">
+      <h3>Want a number you can actually rely on?</h3>
+      <p style="color:#C9D2CE;margin-bottom:1.2rem">I'll help you pressure-test this estimate against a real listing — no pressure, no pitch.</p>
+      <a class="btn btn-gold" href="contact.html">Contact Christian</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<script src="assets/site.js"></script>
+<script src="assets/calculators.js"></script>
+<script>
+/* ---------- Simple range estimator (top of page) ---------- */
+function calcSimple(){
+  const price = parseFloat(document.getElementById('s_price').value) || 0;
+  const downPct = parseFloat(document.getElementById('s_down').value) || 0;
+  const down = price * downPct / 100;
+
+  const low = price * 0.02;
+  const high = price * 0.04;
+
+  document.getElementById('s_range').textContent = usd(down+low) + ' – ' + usd(down+high);
+  document.getElementById('s_down_out').textContent = usd(down);
+  document.getElementById('s_costs_out').textContent = usd(low) + ' – ' + usd(high);
+
+  // Keep the detailed calculator in sync with the simple inputs
+  const priceField = document.getElementById('c2c_price');
+  const downField = document.getElementById('c2c_down');
+  if (priceField) priceField.value = price;
+  if (downField) downField.value = downPct;
+  if (typeof calcC2C === 'function') calcC2C();
+}
+document.getElementById('s_price').addEventListener('input', calcSimple);
+document.getElementById('s_down').addEventListener('input', calcSimple);
+document.getElementById('s_area').addEventListener('change', function(){
+  const rate = parseFloat(this.value);
+  const price = parseFloat(document.getElementById('s_price').value) || 0;
+  const taxField = document.getElementById('c2c_tax');
+  if (taxField) taxField.value = Math.round(price * rate / 100);
+  calcSimple();
+  if (typeof calcC2C === 'function') calcC2C();
+});
+calcSimple();
+
+/* ---------- Reveal full breakdown ---------- */
+function toggleDetail(){
+  const section = document.getElementById('detailSection');
+  const btn = document.getElementById('revealBtn');
+  const showing = section.style.display !== 'none';
+  section.style.display = showing ? 'none' : 'block';
+  btn.textContent = showing ? 'See the Full Breakdown ↓' : 'Hide Full Breakdown ↑';
+  if(!showing){
+    section.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+</script>
+</body>
+</html>
