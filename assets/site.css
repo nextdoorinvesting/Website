@@ -167,6 +167,7 @@ section{padding:4.5rem 0}
 .calc input{width:100%;padding:.7rem .85rem;border:1.5px solid var(--line);border-radius:4px;font-family:'Lato',sans-serif;font-size:1rem;background:var(--bg)}
 .calc input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
 .in-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){.in-row{grid-template-columns:1fr}}
 .calc-out{margin-top:1.5rem;background:var(--bg);border:1.5px solid var(--gold);border-radius:60px 60px 8px 8px;padding:1.8rem 1.5rem 1.4rem;text-align:center}
 .calc-out .big{font-family:'Work Sans',sans-serif;font-weight:800;font-size:1.7rem;color:var(--gold-dark)}
 .calc-out .lbl{font-family:'Work Sans',sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
