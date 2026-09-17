@@ -103,6 +103,31 @@ document.getElementById('blogFilters').addEventListener('click', e=>{
    c.style.display = (cat==='All'||c.dataset.cat===cat)?'flex':'none';
  });
 });
+  <script>
+async function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.innerHTML = '<b style="color:var(--forest)">You\'re in — talk soon.</b>';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
+}
+</script>
 </script>
 </body>
 </html>
