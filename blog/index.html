@@ -66,11 +66,12 @@
           <h3 style="font-size:1rem">Get Market Insights in Your Inbox</h3>
           <p style="font-size:.92rem;color:var(--muted);margin-top:.4rem">One useful email a month. Market data, investing tips, and renovation lessons. No spam, no pressure.</p>
         </div>
-        <form onsubmit="event.preventDefault();this.innerHTML='<b style=\'color:var(--forest)\'>Subscribed — talk soon.</b>'">
-          <input type="text" placeholder="First name" aria-label="First name" required>
-          <input type="email" placeholder="Email address" aria-label="Email address" required>
-          <button class="btn btn-gold" type="submit">Subscribe</button>
-        </form>
+      <form action="https://formspree.io/f/xkjgnaqg" method="POST" onsubmit="handleNewsletterSubmit(event)">
+  <input type="text" name="first_name" placeholder="First name" aria-label="First name" required>
+  <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+  <input type="hidden" name="_subject" value="New Newsletter Signup — Next Door Investing">
+  <button class="btn btn-gold" type="submit">Subscribe</button>
+</form>
       </div>
     </div>
   </section>
